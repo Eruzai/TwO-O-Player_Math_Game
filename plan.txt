@@ -1,0 +1,31 @@
+Create a 2-Player math game where players take turns to answer simple math addition problems.
+A new math question is generated for each turn by picking two numbers between 1 and 20.
+The player whose turn it is is prompted the question and must answer correctly or lose a life.
+
+important entities:
+math_question
+player_info
+game_loop
+
+roles:
+math_question - holds the logic to generate the question
+player - holds player info: name, lives and score
+game_loop - holds the logic to run the game
+
+methods:
+  math_question:
+    generate_question
+    correct_answer?
+
+  player:
+    name
+    score
+    lives
+    update_score
+    remove_life
+    
+  game_loop:
+    begin_game
+    game_over?
+    display_winner
+    terminate_game
