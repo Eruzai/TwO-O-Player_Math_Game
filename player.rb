@@ -15,6 +15,10 @@ class Player
     self.lives -= 1
   end
 
+  def alive?
+    self.lives > 0
+  end
+
   def to_s
     "#{name} has #{score} pts and #{lives} lives"
   end
