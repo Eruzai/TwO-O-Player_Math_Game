@@ -8,6 +8,6 @@ class Question
   end
 
   def ask_question
-    puts "what is the sum of #{num1} + #{num2}?\n>"
+    print "what is the sum of #{num1} + #{num2}?\n> "
   end
 end
