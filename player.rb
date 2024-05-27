@@ -16,12 +16,6 @@ class Player
   end
 
   def to_s
-    "#{name} has a score of #{score} and has #{lives} lives remaining."
+    "#{name} has #{score} pts and #{lives} lives"
   end
 end
-
-player1 = Player.new("Kevin")
-
-puts player1.increment_score
-puts player1.remove_life
-puts player1
